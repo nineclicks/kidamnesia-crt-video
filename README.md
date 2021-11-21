@@ -4,6 +4,7 @@
 pip install -r requirements.txt
 
 # Create items.txt and fill with video paths or paths to directories with videos.
+# Put one video path or directory of videos per line.
 
 python run.py
 
