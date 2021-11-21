@@ -87,8 +87,7 @@ def make_video(output_filename, file_list):
 
     for i in range(VIDEO_LENGTH_FRAMES):
 
-        if int(i/VIDEO_LENGTH_FRAMES*100) != int((i-1)/VIDEO_LENGTH_FRAMES*100):
-            print(str(int(i/VIDEO_LENGTH_FRAMES*100))+ '%')
+        print(f'frame {i} of {VIDEO_LENGTH_FRAMES}, {int(i/VIDEO_LENGTH_FRAMES*100)}%')
 
         new_frame = np.zeros((FRAME_HEIGHT, FRAME_WIDTH,3), np.uint8)
         for i, x in enumerate(sources):
